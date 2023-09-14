@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int s,square;
+	printf("Enter the side.");
+	scanf("%d",&s);
+	square=s*s;
+	printf("%d",square);
+	getch();
+}
