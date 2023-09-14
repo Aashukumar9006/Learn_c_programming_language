@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,a,b,c,r1,r2,r3,rev,t;
+	printf("Enter a number");
+	scanf("%d",&n);
+	t=n;
+	a=n%10;
+	n=n/10;
+	b=n%10;
+	n=n/10;
+	c=n;
+	
+	r1=a*100;
+	r2=b*10;
+	r3=c;
+	rev=r1+r2+r3;
+	 
+	 if (t==rev)
+	 printf("The number is pelaindrom");
+	 else 
+	 printf("The number is not pelaindrom");
+	 getch();
+}
