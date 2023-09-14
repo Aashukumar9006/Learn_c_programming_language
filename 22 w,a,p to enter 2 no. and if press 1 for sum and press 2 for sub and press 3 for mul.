@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,a,b,sum,sub,mul;
+	printf("Enter two number");
+	scanf("%d %d",&a,&b);
+	printf("press 1 for sum, press 2 for sub, press 3 for mul");
+	scanf("%d",&n);
+	switch(n)
+	{
+	case 1:
+		sum=a+b;
+		printf("%d",sum);
+		break;
+		case 2:
+			sub=a-b;
+			printf("%d",sub);
+			break;
+			case 3:
+				mul=a*b;
+				printf("%d",mul);
+				break;
+				default:
+				printf("plz enter only 1 to 3 ");
+			}
+	getch();
+}
