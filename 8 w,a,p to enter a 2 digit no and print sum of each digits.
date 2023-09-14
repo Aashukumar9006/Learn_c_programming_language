@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,a,b,sum;
+	printf("Enter two digit no.");
+	scanf("%d",&n);
+	a=n%10;
+	n=n/10;
+	b=n;
+	sum=a+b;
+	printf("%d",sum);
+	getch();
+}
