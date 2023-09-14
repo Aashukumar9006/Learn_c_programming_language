@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int math,science,english,avg;
+	printf("Enter math,science,english number");
+	scanf("%d %d %d",&math,&science,&english);
+	avg=math+science+english/3;
+	if (avg>90)
+	printf("A++");
+	else if (avg>80&&avg<=90)
+	printf("A+");
+	else if (avg>70&&avg<=80)
+	printf("A");
+	else 
+	printf("fail");
+	getch();
+}
