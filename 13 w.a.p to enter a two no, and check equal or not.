@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int a,b;
+	printf("Enter a two no. A,B ");
+	scanf("%d %d",&a,&b);
+	if (a==b)
+	printf("Number is equal");
+	else 
+	printf("Number is not equal");
+	getch();
+}
