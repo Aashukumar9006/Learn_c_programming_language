@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int a,b;
+	printf("Enter two number A,B ");
+	scanf("%d %d",&a,&b);
+	if (a>b)
+	printf("A is a grater no.");
+	else
+	printf("B is is grater no.");
+	getch();
+}
