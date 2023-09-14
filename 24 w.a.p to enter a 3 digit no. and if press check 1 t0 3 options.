@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,d,r,a,b,c,a1,b1,c1,r1,r2,r3,rev,feb;
+	printf("Enter a 3 digit number");
+	scanf("%d",&n);
+	printf("press 1 for odd or even, press 2 for armstrong, press 3 for palindrom");
+	scanf("%d",&d);
+	r=n;
+	switch(d)
+	{
+		case 1:
+			if (r%2==0)
+			printf("The number is even");
+			else
+			printf("The number is odd");
+			break;
+			case 2:
+				a=n%10;
+				n=n/10;
+				b=n%10;
+				n=n/10;
+				c=n;
+				a1=a*a*a;
+				b1=b*b*b;
+				c1=c*c*c;
+				feb=a1+b1+c1;
+				if (r==feb)
+				printf("The number is armstrong");
+				else 
+				printf("The number is not armstrong");
+				break;
+				case 3:
+				a=n%10;
+				n=n/10;
+				b=n%10;
+				n=n/10;
+				c=n;
+				r1=a*100;
+				r2=b*10;
+				r3=c;
+				rev=r1+r2+r3;
+				if (r==rev)
+				printf("The number is palindrom");
+				else
+				printf("The number is not palindrom");
+				break;
+				default:
+					printf("press only 1 to 3");
+	}
+	getch();
+}
